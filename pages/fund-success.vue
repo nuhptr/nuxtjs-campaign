@@ -1,3 +1,27 @@
+<script setup lang="ts">
+const router = useRouter();
+const indexRouter = () => {
+  router.push("/");
+};
+const dashboardRouter = () => {
+  router.push("/dashboard");
+};
+
+definePageMeta({
+  layout: false,
+});
+
+useHead({
+  title: "Funded | Fund Success",
+  meta: [
+    {
+      name: "description",
+      content: "Funded website for campaign startup to grow up",
+    },
+  ],
+});
+</script>
+
 <template>
   <NuxtLayout name="success">
     <div class="container mx-auto h-screen flex justify-center items-center">
@@ -37,27 +61,3 @@
     </div>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts">
-const router = useRouter();
-const indexRouter = () => {
-  router.push("/");
-};
-const dashboardRouter = () => {
-  router.push("/dashboard");
-};
-
-definePageMeta({
-  layout: false,
-});
-
-useHead({
-  title: "Funded | Fund Success",
-  meta: [
-    {
-      name: "description",
-      content: "Funded website for campaign startup to grow up",
-    },
-  ],
-});
-</script>

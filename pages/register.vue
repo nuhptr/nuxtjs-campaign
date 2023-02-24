@@ -1,3 +1,28 @@
+<script setup lang="ts">
+const router = useRouter();
+const uploadRouter = () => {
+  router.push("/upload");
+};
+
+useHead({
+  title: "Funded | Register",
+  meta: [
+    {
+      name: "description",
+      content: "Funded website for campaign startup to grow up",
+    },
+  ],
+});
+</script>
+
+<style scoped>
+.auth-background {
+  background-image: url("/images/sign-up-background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+</style>
+
 <template>
   <NuxtLayout name="auth">
     <div class="h-screen flex justify-center items-center">
@@ -52,9 +77,9 @@
           <div class="text-center">
             <p class="text-white text-md">
               Sudah punya akun?
-              <NuxtLink to="/login" class="no-underline text-orange-button"
-                >Masuk</NuxtLink
-              >.
+              <NuxtLink to="/login" class="no-underline text-orange-button">
+                Masuk
+              </NuxtLink>
             </p>
           </div>
         </div>
@@ -62,28 +87,3 @@
     </div>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts">
-const router = useRouter();
-const uploadRouter = () => {
-  router.push("/upload");
-};
-
-useHead({
-  title: "Funded | Register",
-  meta: [
-    {
-      name: "description",
-      content: "Funded website for campaign startup to grow up",
-    },
-  ],
-});
-</script>
-
-<style scoped>
-.auth-background {
-  background-image: url("/images/sign-up-background.jpg");
-  background-position: center;
-  background-size: cover;
-}
-</style>

@@ -1,3 +1,15 @@
+<script setup lang="ts">
+useHead({
+  title: "Funded | Details Projects",
+  meta: [
+    {
+      name: "description",
+      content: "Funded website for campaign startup to grow up",
+    },
+  ],
+});
+</script>
+
 <template>
   <div class="project-page">
     <section class="project-header pt-5">
@@ -153,15 +165,3 @@
     <Footer />
   </div>
 </template>
-
-<script setup lang="ts">
-useHead({
-  title: "Funded | Details Projects",
-  meta: [
-    {
-      name: "description",
-      content: "Funded website for campaign startup to grow up",
-    },
-  ],
-});
-</script>

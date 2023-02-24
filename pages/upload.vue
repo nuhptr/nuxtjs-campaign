@@ -1,3 +1,24 @@
+<script setup lang="ts">
+const router = useRouter();
+const registerSuccessRouter = () => {
+  router.push("/register-success");
+};
+
+definePageMeta({
+  layout: false,
+});
+
+useHead({
+  title: "Funded | Upload Photo",
+  meta: [
+    {
+      name: "description",
+      content: "Funded website for campaign startup to grow up",
+    },
+  ],
+});
+</script>
+
 <template>
   <NuxtLayout name="auth">
     <div class="container mx-auto h-screen flex justify-center items-center">
@@ -44,24 +65,3 @@
     </div>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts">
-const router = useRouter();
-const registerSuccessRouter = () => {
-  router.push("/register-success");
-};
-
-definePageMeta({
-  layout: false,
-});
-
-useHead({
-  title: "Funded | Upload Photo",
-  meta: [
-    {
-      name: "description",
-      content: "Funded website for campaign startup to grow up",
-    },
-  ],
-});
-</script>

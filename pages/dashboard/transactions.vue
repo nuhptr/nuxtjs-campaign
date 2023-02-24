@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <div class="project-page">
     <section class="dashboard-header pt-5">
@@ -48,5 +50,3 @@
     <Footer />
   </div>
 </template>
-
-<script setup lang="ts"></script>

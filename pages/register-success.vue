@@ -1,3 +1,17 @@
+<script setup lang="ts">
+const router = useRouter();
+const indexRouter = () => {
+  router.push("/");
+};
+
+useHead({
+  title: "Funded | Success Register",
+  meta: [
+    { name: "description", content: "Funded website for campaign startup to grow up" },
+  ],
+});
+</script>
+
 <template>
   <NuxtLayout name="success">
     <div class="container mx-auto h-screen flex justify-center items-center">
@@ -29,17 +43,3 @@
     </div>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts">
-const router = useRouter();
-const indexRouter = () => {
-  router.push("/");
-};
-
-useHead({
-  title: "Funded | Success Register",
-  meta: [
-    { name: "description", content: "Funded website for campaign startup to grow up" },
-  ],
-});
-</script>

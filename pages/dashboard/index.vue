@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <div class="project-page">
     <section class="dashboard-header pt-5">
@@ -11,7 +13,9 @@
           <h2 class="text-4xl text-gray-900 mb-2 font-medium">Dashboard</h2>
           <ul class="flex mt-2">
             <li class="mr-6">
-              <NuxtLink class="text-gray-800 font-bold" to="/dashboard"> Projek Kamu </NuxtLink>
+              <NuxtLink class="text-gray-800 font-bold" to="/dashboard">
+                Projek Kamu
+              </NuxtLink>
             </li>
             <li class="mr-6">
               <NuxtLink
@@ -70,5 +74,3 @@
     <Footer />
   </div>
 </template>
-
-<script setup lang="ts"></script>

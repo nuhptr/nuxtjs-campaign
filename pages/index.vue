@@ -1,3 +1,16 @@
+<script setup lang="ts">
+definePageMeta({
+  layout: false,
+});
+
+useHead({
+  title: "Funded | Startup Website",
+  meta: [
+    { name: "description", content: "Funded website for campaign startup to grow up" },
+  ],
+});
+</script>
+
 <template>
   <div class="landing-page">
     <section class="landing-hero pt-5">
@@ -14,16 +27,3 @@
     <Footer />
   </div>
 </template>
-
-<script setup lang="ts">
-definePageMeta({
-  layout: false,
-});
-
-useHead({
-  title: "Funded | Startup Website",
-  meta: [
-    { name: "description", content: "Funded website for campaign startup to grow up" },
-  ],
-});
-</script>

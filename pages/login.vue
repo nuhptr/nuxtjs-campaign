@@ -1,3 +1,32 @@
+<script setup lang="ts">
+const router = useRouter();
+const indexRouter = () => {
+  router.push("/");
+};
+
+definePageMeta({
+  layout: false,
+});
+
+useHead({
+  title: "Funded | Login",
+  meta: [
+    {
+      name: "description",
+      content: "Funded website for campaign startup to grow up",
+    },
+  ],
+});
+</script>
+
+<style scoped>
+.auth-background {
+  background-image: url("/images/sign-in-background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+</style>
+
 <template>
   <NuxtLayout name="auth">
     <div class="h-auto flex justify-center items-center">
@@ -46,32 +75,3 @@
     </div>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts">
-const router = useRouter();
-const indexRouter = () => {
-  router.push("/");
-};
-
-definePageMeta({
-  layout: false,
-});
-
-useHead({
-  title: "Funded | Login",
-  meta: [
-    {
-      name: "description",
-      content: "Funded website for campaign startup to grow up",
-    },
-  ],
-});
-</script>
-
-<style scoped>
-.auth-background {
-  background-image: url("/images/sign-in-background.jpg");
-  background-position: center;
-  background-size: cover;
-}
-</style>
