@@ -23,4 +23,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  // Set the base url for API
+  runtimeConfig: {
+    public: {
+      Base_Url: "backer-backend.buildwithangga.id",
+    },
+  },
 });
