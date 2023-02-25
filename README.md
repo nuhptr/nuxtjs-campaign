@@ -3,8 +3,7 @@
 ## Dependencies
 
 ```bash
-$ npm install --save-exact @nuxtjs/auth-next
-$ npm install @nuxtjs/axios
+$ npm i -D @sidebase/nuxt-auth
 ```
 
 ## Tailwind Setup
